@@ -35,7 +35,7 @@ window.renderStatistics = function (ctx, names, times) {
       var colLeft = CLOUD_X + 30 + i * (COL_SPACE + COL_WIDTH);
       var colTop = CLOUD_Y + 85 + COL_MAX_HEIGHT - colHeight;
 
-      ctx.fillStyle = (names[i] === YOU) ? 'rgba(255, 0, 0, 1)' : 'rgba(0, 0, 255, ' + Math.random() + ')';
+      ctx.fillStyle = (names[i] === YOU) ? 'rgba(255, 0, 0, 1)' : ('rgba(0, 0, 255, ' + Math.random() + ')');
       ctx.fillRect(colLeft, colTop, COL_WIDTH, colHeight);
 
       ctx.font = TEXT_FONT;
